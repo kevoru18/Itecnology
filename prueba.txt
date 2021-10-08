@@ -1,0 +1,24 @@
+Prueba Técnica   I-Technology
+Buenas tardes,
+Como se platicó en la entrevista, el siguiente paso es completar esta prueba técnica. Recuerde que debe cumplir los requerimientos, 
+pero también tiene la libertad de agregar o cambiar cosas que agreguen al proyecto y que el funcionamiento básico sea correcto. 
+Puede usar otras tecnologías que se acoplen con PHP también. Se evaluarán temas técnicos como calidad de código, patrón de diseño 
+(puede usar MVC), estandarización de nombres, si es responsive, etc, como también se evaluará la atención a los detalles y la 
+experiencia de usuario. En i-technology, nos gusta que nuestros compañeros nos sorprendan.
+La fecha límite de entrega es el jueves 7 de octubre de 2021 a las 10pm. Es necesario que se cumpla lo del hosting, 
+para poderla compartir con mis compañeros no técnicos. Cualquier duda que tenga con respecto a la prueba no dude en escribirnos.
+ Por favor confirme si recibió este correo para asegurar que tenga suficiente tiempo.
+¡Éxitos! Esperamos ver su solución pronto.
+
+
+
+$servername='localhost';
+$conectionInfo=array("Database"=>"itec","UID"=>"kevoru", "pwd"=>"1234");
+$conexion = sqlsrv_connect($servername,$conectionInfo);
+if ($conexion){
+    echo"conexion exitosa";
+
+}else {
+    echo"fallo la conexion";
+    die(print_r(sqlsrv_errors(), true));
+}
